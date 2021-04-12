@@ -42,21 +42,17 @@ html.no-scrow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
 }
 
-@media screen and (min-width: 725px) {
-  .header__content {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+.header #header-logo {
+  margin-top: 8px;
 }
 
 .header__mobile-toggler {

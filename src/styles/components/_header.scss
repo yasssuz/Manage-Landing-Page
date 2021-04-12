@@ -5,13 +5,13 @@
     padding-top: 40px;
     padding-bottom: rem(40);
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     position: relative;
+  }
 
-    @media screen and (min-width: 725px) {
-      align-items: center;
-    }
+  #header-logo {
+    margin-top: 8px;
   }
 
   &__mobile-toggler {
