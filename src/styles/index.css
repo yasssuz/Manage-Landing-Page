@@ -32,6 +32,27 @@ html.no-scrow {
   padding: 0 25px;
 }
 
+.primary-btn {
+  color: white;
+  background: #f25f3a;
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  border-radius: 1.875em;
+  -webkit-transition: -webkit-filter 0.2s ease;
+  transition: -webkit-filter 0.2s ease;
+  transition: filter 0.2s ease;
+  transition: filter 0.2s ease, -webkit-filter 0.2s ease;
+}
+
+.primary-btn:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+}
+
 .header {
   min-height: 120vh;
 }
@@ -52,7 +73,7 @@ html.no-scrow {
 }
 
 .header #header-logo {
-  margin-top: 8px;
+  margin-top: 7px;
 }
 
 .header__mobile-toggler {
@@ -204,7 +225,10 @@ html.no-scrow {
 
 @media screen and (min-width: 1000px) {
   .header__button {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0.6875em 2.1875em;
   }
 }
 

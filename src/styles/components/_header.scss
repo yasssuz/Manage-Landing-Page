@@ -11,7 +11,7 @@
   }
 
   #header-logo {
-    margin-top: 8px;
+    margin-top: 7px;
   }
 
   &__mobile-toggler {
@@ -137,7 +137,8 @@
     display: none;
 
     @media screen and (min-width: 1000px) {
-      display: block;
+      display: flex;
+      padding: em(11) em(35);
     }
   }
 }

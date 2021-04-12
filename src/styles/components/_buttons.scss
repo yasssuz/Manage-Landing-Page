@@ -1,0 +1,16 @@
+.primary-btn {
+  color: white;
+  background: $BrightRed;
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: rem(16);
+  border: none;
+  border-radius: em(30);
+  transition: filter 0.2s ease;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+}
