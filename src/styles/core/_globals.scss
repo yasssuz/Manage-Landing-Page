@@ -15,3 +15,7 @@ body {
   font-family: 'Be Vietnam', sans-serif;
   position: relative;
 }
+
+html.no-scrow {
+  overflow: hidden;
+}

@@ -17,6 +17,10 @@ body {
   position: relative;
 }
 
+html.no-scrow {
+  overflow: hidden;
+}
+
 .padding-container {
   padding: 0 calc((100vw - 1225px) / 2);
   margin: 0 25px;
@@ -29,7 +33,7 @@ body {
 }
 
 .header {
-  min-height: 100vh;
+  min-height: 120vh;
 }
 
 .header__content {
