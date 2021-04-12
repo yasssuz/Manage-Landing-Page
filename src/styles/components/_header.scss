@@ -69,6 +69,11 @@
     font-weight: 600;
     text-transform: capitalize;
     font-size: rem(17);
+
+    &:hover {
+      text-decoration: underline;
+      font-size: rem(18);
+    }
   }
 
   &__nav-link + &__nav-link {

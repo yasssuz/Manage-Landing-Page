@@ -121,6 +121,11 @@ html.no-scrow {
   font-size: 1.0625rem;
 }
 
+.header__nav-link:hover {
+  text-decoration: underline;
+  font-size: 1.125rem;
+}
+
 .header__nav-link + .header__nav-link {
   margin-top: 1.125rem;
 }
