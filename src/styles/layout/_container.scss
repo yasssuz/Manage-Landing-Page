@@ -1,0 +1,10 @@
+.padding-container {
+  padding: 0 calc((100vw - 1225px) / 2);
+  margin: 0 25px;
+}
+
+.margin-container {
+  max-width: 1225px;
+  margin: auto;
+  padding: 0 25px;
+}
