@@ -250,4 +250,11 @@ html.no-scrow {
   visibility: visible;
   opacity: 1;
 }
+
+@media screen and (min-width: 725px) {
+  #overlay.active {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
 /*# sourceMappingURL=index.css.map */
