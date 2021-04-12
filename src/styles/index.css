@@ -27,4 +27,120 @@ body {
   margin: auto;
   padding: 0 25px;
 }
+
+.header {
+  min-height: 100vh;
+}
+
+.header__content {
+  padding-top: 40px;
+  padding-bottom: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.header__mobile-toggler {
+  display: block;
+  cursor: pointer;
+}
+
+.header__mobile-toggler.active .header__toggler-bar:nth-child(1) {
+  -webkit-transform: rotate(45deg) translateY(11px);
+          transform: rotate(45deg) translateY(11px);
+}
+
+.header__mobile-toggler.active .header__toggler-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.header__mobile-toggler.active .header__toggler-bar:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translateY(-11px);
+          transform: rotate(-45deg) translateY(-11px);
+}
+
+.header__toggler-bar {
+  width: 30px;
+  height: 4px;
+  display: block;
+  background: #1d1e25;
+  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.header__toggler-bar:nth-child(2) {
+  margin: 4px 0;
+}
+
+.header__navigation {
+  background: white;
+  position: absolute;
+  width: 100%;
+  top: 6.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.875rem;
+  border-radius: 0.5rem;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.25s ease, visibility 0.25s ease;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.header__navigation.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.header__nav-link {
+  text-decoration: none;
+  color: #1d1e25;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 1.0625rem;
+}
+
+.header__nav-link + .header__nav-link {
+  margin-top: 1.125rem;
+}
+
+.header__button {
+  display: none;
+}
+
+#overlay {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.6)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.6));
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.25s ease, visibility 0.25s ease;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+#overlay.active {
+  visibility: visible;
+  opacity: 1;
+}
 /*# sourceMappingURL=index.css.map */

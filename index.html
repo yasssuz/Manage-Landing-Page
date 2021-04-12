@@ -20,8 +20,27 @@
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <h1>gonna start</h1>
+    <div id="overlay"></div>
 
-    <script src="src/app.js" async defer></script>
+    <header class="header">
+      <div class="header__content padding-container">
+        <img src="images/logo.svg" alt="brand logo" id="nav-logo" />
+        <div class="header__mobile-toggler">
+          <div class="header__toggler-bar"></div>
+          <div class="header__toggler-bar"></div>
+          <div class="header__toggler-bar"></div>
+        </div>
+        <nav class="header__navigation">
+          <a href="#" class="header__nav-link">pricing</a>
+          <a href="#" class="header__nav-link">product</a>
+          <a href="#" class="header__nav-link">about us</a>
+          <a href="#" class="header__nav-link">carrers</a>
+          <a href="#" class="header__nav-link">community</a>
+        </nav>
+        <a href="#" class="button-primary header__button">Get Started</a>
+      </div>
+    </header>
+
+    <script src="src/script/app.js" async defer></script>
   </body>
 </html>
