@@ -6,14 +6,13 @@
   &__img-area {
     &::after {
       content: '';
-      width: 110%;
-      height: 35%;
-      display: block;
+      width: 115%;
+      height: 32%;
       background: red;
       position: absolute;
       top: 0;
       right: 0;
-      transform: rotate(-43deg) translateY(80px) translateX(50px);
+      transform: rotate(-43deg) translateY(100px) translateX(50px);
       border-radius: em(180) 0 0 em(180);
       z-index: -1;
       background: $BrightRed;

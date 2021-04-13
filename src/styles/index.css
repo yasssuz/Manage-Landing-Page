@@ -288,15 +288,14 @@ html.no-scrow {
 
 .hero__img-area::after {
   content: '';
-  width: 110%;
-  height: 35%;
-  display: block;
+  width: 115%;
+  height: 32%;
   background: red;
   position: absolute;
   top: 0;
   right: 0;
-  -webkit-transform: rotate(-43deg) translateY(80px) translateX(50px);
-          transform: rotate(-43deg) translateY(80px) translateX(50px);
+  -webkit-transform: rotate(-43deg) translateY(100px) translateX(50px);
+          transform: rotate(-43deg) translateY(100px) translateX(50px);
   border-radius: 11.25em 0 0 11.25em;
   z-index: -1;
   background: #f25f3a;
