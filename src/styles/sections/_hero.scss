@@ -1,14 +1,23 @@
 .hero {
   &__content {
     text-align: center;
+
+    @media screen and (min-width: 900px) {
+      text-align: left;
+      place-items: center;
+      min-height: 650px;
+    }
   }
 
   &__img-area {
+    @media screen and (min-width: 900px) {
+      grid-column: 2 / 3;
+    }
+
     &::after {
       content: '';
       width: 115%;
       height: 32%;
-      background: red;
       position: absolute;
       top: 0;
       right: 0;
@@ -17,6 +26,12 @@
       z-index: -1;
       background: $BrightRed;
       opacity: 0.1;
+
+      @media screen and (min-width: 900px) {
+        width: 60%;
+        height: 45%;
+        transform: rotate(-48deg) translateY(180px);
+      }
     }
 
     img {
@@ -26,6 +41,10 @@
 
   &__text-area {
     padding-bottom: rem(20);
+
+    @media screen and (min-width: 900px) {
+      grid-row: 1;
+    }
 
     p {
       margin: rem(15) 0 rem(35);
