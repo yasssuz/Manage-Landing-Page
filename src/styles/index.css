@@ -22,7 +22,7 @@ html.no-scrow {
 }
 
 .primary-title {
-  font-size: clamp(2.25rem, 6.5vw, 3.75rem);
+  font-size: clamp(2.25rem, 5.5vw, 3.75rem);
   font-weight: 700;
   color: #1d1e25;
   line-height: 1.2;
@@ -109,6 +109,7 @@ html.no-scrow {
 .header__mobile-toggler {
   display: block;
   cursor: pointer;
+  z-index: 99;
 }
 
 @media screen and (min-width: 725px) {
@@ -165,6 +166,7 @@ html.no-scrow {
   border-radius: 0.5rem;
   visibility: hidden;
   opacity: 0;
+  z-index: 99;
   -webkit-transition: opacity 0.25s ease, visibility 0.25s ease;
   transition: opacity 0.25s ease, visibility 0.25s ease;
 }
@@ -268,10 +270,11 @@ html.no-scrow {
   top: 0;
   bottom: 0;
   left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.6)));
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.6));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.6)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6));
   visibility: hidden;
   opacity: 0;
+  z-index: 98;
   -webkit-transition: opacity 0.25s ease, visibility 0.25s ease;
   transition: opacity 0.25s ease, visibility 0.25s ease;
 }
@@ -300,23 +303,30 @@ html.no-scrow {
   }
 }
 
+.hero__img-area {
+  position: relative;
+  max-width: 500px;
+  margin: auto;
+}
+
 @media screen and (min-width: 900px) {
   .hero__img-area {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2 / 3;
+    max-width: unset;
   }
 }
 
 .hero__img-area::after {
   content: '';
-  width: 115%;
-  height: 32%;
+  width: 115vw;
+  height: 70%;
   position: absolute;
   top: 0;
-  right: 0;
-  -webkit-transform: rotate(-43deg) translateY(100px) translateX(50px);
-          transform: rotate(-43deg) translateY(100px) translateX(50px);
+  left: -50px;
+  -webkit-transform: rotate(-40deg) translateX(66px) translateY(33px);
+          transform: rotate(-40deg) translateX(66px) translateY(33px);
   border-radius: 11.25em 0 0 11.25em;
   z-index: -1;
   background: #f25f3a;
@@ -325,10 +335,10 @@ html.no-scrow {
 
 @media screen and (min-width: 900px) {
   .hero__img-area::after {
-    width: 60%;
-    height: 45%;
-    -webkit-transform: rotate(-48deg) translateY(180px);
-            transform: rotate(-48deg) translateY(180px);
+    width: 60vw;
+    height: 320px;
+    -webkit-transform: rotate(-40deg) translateX(80px) translateY(0);
+            transform: rotate(-40deg) translateX(80px) translateY(0);
   }
 }
 
@@ -348,7 +358,14 @@ html.no-scrow {
 }
 
 .hero__text-area p {
-  margin: 0.9375rem 0 2.1875rem;
+  margin: 0.9375rem auto 2.1875rem;
+  max-width: 51ch;
+}
+
+@media screen and (min-width: 900px) {
+  .hero__text-area p {
+    margin: 1.875rem 0 2.8125rem;
+  }
 }
 
 .hero__text-area a {

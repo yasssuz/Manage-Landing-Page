@@ -15,6 +15,7 @@
   &__mobile-toggler {
     display: block;
     cursor: pointer;
+    z-index: 99;
 
     @media screen and (min-width: 725px) {
       display: none;
@@ -61,6 +62,7 @@
     border-radius: rem(8);
     visibility: hidden;
     opacity: 0;
+    z-index: 99;
     transition: opacity 0.25s ease, visibility 0.25s ease;
 
     @media screen and (min-width: 725px) {
