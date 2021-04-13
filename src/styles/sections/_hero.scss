@@ -1,0 +1,39 @@
+.hero {
+  &__content {
+    text-align: center;
+  }
+
+  &__img-area {
+    &::after {
+      content: '';
+      width: 110%;
+      height: 35%;
+      display: block;
+      background: red;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: rotate(-43deg) translateY(80px) translateX(50px);
+      border-radius: em(180) 0 0 em(180);
+      z-index: -1;
+      background: $BrightRed;
+      opacity: 0.1;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__text-area {
+    padding-bottom: rem(20);
+
+    p {
+      margin: rem(15) 0 rem(35);
+    }
+
+    a {
+      padding: em(11) em(35);
+    }
+  }
+}
