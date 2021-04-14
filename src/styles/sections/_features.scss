@@ -1,0 +1,65 @@
+.features {
+  margin: rem(80) 0;
+
+  &__content {
+    margin: 0 10px 0 20px;
+    text-align: center;
+
+    h2 {
+      max-width: 15ch;
+      margin: auto;
+    }
+  }
+
+  &__description {
+    margin: rem(15) auto 0;
+    max-width: 31ch;
+  }
+
+  &__list {
+    list-style: none;
+    counter-reset: feature;
+    text-align: left;
+  }
+
+  &__feature {
+    counter-increment: feature;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: rem(50);
+    position: relative;
+
+    &::before {
+      content: '0' counter(feature);
+      background: $BrightRed;
+      color: white;
+      border-radius: em(20);
+      width: rem(60);
+      height: rem(37);
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      background: $BrightRed;
+      opacity: 0.1;
+      z-index: -1;
+      left: 0;
+      width: 100vw;
+      height: rem(37);
+      top: 0;
+      border-radius: em(20) 0 0 em(20);
+    }
+
+    p {
+      display: block;
+      margin-top: rem(10);
+    }
+  }
+}

@@ -6,8 +6,22 @@
   line-height: 1.2;
 }
 
+.secondary-title {
+  font-size: rem(31);
+  font-weight: 700;
+  color: $VeryDarkBlue;
+  line-height: 1.4;
+}
+
+.tertiary-title {
+  font-size: rem(18);
+  font-weight: 700;
+  color: $VeryDarkBlue;
+  line-height: 1.2;
+}
+
 .primary-paragraph {
   color: $DarkGrayishBlue;
   font-size: clamp(rem(15), 5vw, rem(17));
-  line-height: 1.6;
+  line-height: 1.7;
 }
